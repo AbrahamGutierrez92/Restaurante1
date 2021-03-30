@@ -1,0 +1,442 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Ubuntu', sans-serif;
+}
+nav{
+    width: 100%;
+    height: 60px;
+    background: #221b49;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+nav p{
+    color: white;
+    font-size: 20px;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+}
+nav ul li{
+    margin-left: 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+.burger.focus{
+    outline: none;
+}
+.burger{
+    border: 0;
+    background-color: transparent;
+    color: white;
+    font-size: 22px;
+    border: 1px solid #221b49;
+    display: none;
+}
+/*Header*/
+.fondo{
+    background-image: url('../img/Fondo4.jpg');
+    width: 100%;
+    height: 100vh;
+    background-size: auto;
+    background-position:left;
+    display: flex;
+    align-items: center;
+}
+.fondo img{
+    width: 600px;
+    height: 600;
+    transform: rotate(80deg);
+}
+.fondo .titulo-principal{
+    position: relative;
+    width: 50%;
+    padding: 50px;
+}
+.fondo .titulo-principal h1{
+    color: white;
+    font-size: 49px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+.fondo .titulo-principal p{
+    color: white;
+    font-size: 18px;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+.fondo .titulo-principal .boton button{
+  width: 150px;
+  height: 40px;
+  border-radius: 50px;
+  background: #221b49;
+  color: white;
+  cursor: pointer;
+  border: none;
+}
+/*Menu Principal*/
+.menu-plato{
+    width: 100%;
+    background: #221b49;
+}
+.menu-plato .box-menu{
+    padding: 25px;
+}
+.menu-plato .box-menu .titulo-menu h2{
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+.menu-plato .box-menu .titulo-menu p{
+    font-size: 15px;
+    text-align: center;
+    color: white;
+    margin-bottom: 10px;
+}
+.menu-plato .box-menu-img{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 40px;
+    margin: auto;
+    justify-content:space-evenly;
+}
+.menu-plato .box-menu-img .caja{
+    width: 200;
+    padding: 20px;
+    margin-left: 15px;
+    
+}
+.menu-plato .box-menu-img .caja:hover{
+    background: #dda761;
+    border-radius: 15px;
+}
+
+.menu-plato .box-menu-img .caja:hover p{
+    color: #221b49;
+}
+.menu-plato .box-menu-img .caja:hover img{
+    border: 4px solid #221b49;
+}
+.menu-plato .box-menu-img .caja img{
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    margin-bottom: 15px;
+    border: 4px solid #dda761;
+}
+.menu-plato .box-menu-img .caja h3,p{
+    text-align: center;
+    color: white;
+}
+/*Promo*/
+.promo{
+    width: 100%;
+    height: 100vh;
+    background: #dda761;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.promo .promo-box{
+    padding: 25px;
+    display: flex;
+    align-items: center;
+}
+
+.promo .promo-box .caja-promo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    
+}
+.promo .promo-box .caja-promo img{
+    width: 450px;
+    height: 450px;
+    border-radius: 100%;
+    padding: 25px;
+    background: #221b49;
+}
+.promo .promo-box .caja-promo .promo-titulo{
+    width: 40%;
+}
+.promo .promo-box .caja-promo .promo-titulo h2{
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: white;
+}
+.promo .promo-box .caja-promo .promo-titulo p{
+    font-size: 15px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.promo .promo-box .caja-promo .promo-titulo .boton{
+   display: flex;
+   justify-content: center;
+}
+.promo .promo-box .caja-promo .promo-titulo .boton button{
+    width: 150px;
+    height: 40px;
+    border-radius: 50px;
+    background: #221b49;
+    color: white;
+    cursor: pointer;
+    border: none;
+    text-align: center;
+    
+}
+/*estatistica*/
+.estatistica{
+    width: 100%;
+    background: #221b49;
+}
+.estatistica .estatic{
+    padding: 25px;
+    margin: auto;
+}
+.estatistica .estatic .titulo-estadistica{
+    text-align: center;
+    color: white;
+}
+.estatistica .estatic .titulo-estadistica h2{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.estatistica .estatic .titulo-estadistica p{
+    margin-bottom: 40px;
+}
+.estatistica .estatic .contenedor-caja{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: auto;
+}
+.estatistica .estatic .contenedor-caja .caja{
+    width: 200px;
+    height: 200px;
+    border: 5px solid white;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.estatistica .estatic .contenedor-caja .caja:hover{
+    background: #dda761;
+}
+.estatistica .estatic .contenedor-caja .caja h3{
+    text-align: center;
+    color: white;
+    font-size: 35px;
+}
+.estatistica .estatic .contenedor-caja .caja p{
+    font-size: 20px;
+    font-weight: bold;
+}
+/*Nosotros*/
+.nosotro{
+    width: 100%;
+    background: #dda761;
+}
+.nosotro h2{
+    text-align: center;
+    color: #221b49;
+    font-size: 35px;
+    padding: 25px;
+}
+.nosotro .nosotros-box{
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.nosotro .nosotros-box img{
+    width: 250px;
+    height: 260px;
+    border-radius: 100%;
+    object-fit: cover;
+    border: 5px solid #221b49;
+}
+.nosotros-box .imagen-titulo h3{
+    color: #221b49;
+}
+/*Contacto*/
+.contacto{
+    width: 100%;
+    height: 400px;
+    background: #221b49;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contacto .box-contacto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.caja1 h3{
+    text-align: center;
+    font-size: 35px;
+    padding: 20px;
+    color: white;
+}
+.caja1 p{
+    margin-bottom: 25px;
+}
+.caja2 form input{
+    width: 300px;
+    height: 40px;
+    border-radius: 50px;
+}
+.caja2 form button{
+    width: 150px;
+    height: 40px;
+    border-radius: 50px;
+    background: #dda761;
+    color: #221b49;
+    cursor: pointer;
+    border: none;
+    text-align: center;
+}
+/*FOOTER*/
+.footer{
+    width: 100%;
+    height: 80vh;
+    background: #161516;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.caja-footer{
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.caja-footer .boxcaja{
+    width: 40%;
+}
+.caja-footer .boxFooter{
+    width: 33%;
+}
+.caja-footer .boxFooter p{
+    text-align: justify;
+    margin: 20px;
+    margin-bottom: 15px;
+}
+.footer .caja-footer .boxFooter h3{
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+.footer .caja-footer .sociales{
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    padding: 25px;
+}
+
+.footer .caja-footer .sociales i{
+    font-size: 35px;
+    color: white;
+}
+.footer .caja-footer .sociales .fa-facebook:hover{
+    color: #121b69;
+}
+.footer .caja-footer .sociales .fa-instagram:hover{
+    color: #c94138;
+}
+.footer .caja-footer .sociales .fa-twitter:hover{
+    color: #548ab6;
+}
+
+@media (max-width: 448px){
+    .fondo-img{
+        display: none;
+    }
+    .burger{
+        display: block;
+    }
+    ul{
+        background-color: #221b49;
+        box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+        flex-direction: column;
+        position: fixed;
+        top: 80px;
+        left: 10%;
+        width: 80%;
+        text-align: center;
+        transform: translateX(120%);
+        transition: transform 0.4s ease;
+    }
+    nav ul.show{
+        transform: translateX(0);
+    }
+    nav ul li{
+        margin: 15px;
+    }
+
+    .fondo .titulo-principal{
+        width: 100%;
+        margin: auto;
+    }
+    .fondo .titulo-principal h1{
+        width: 100%;
+        font-size: 35px;
+    }
+    /*Promocion*/
+    .promo .promo-box .caja-promo img{
+       width: 300px;
+       height: 300px;
+    }
+    .promo .promo-box .caja-promo .promo-titulo{
+        width: 100%;
+    }
+    .promo .promo-box .caja-promo .promo-titulo h3{
+       font-size: 15px;
+    }
+    /*Contacto*/
+    .contacto .box-contacto .caja2 form{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .contacto .box-contacto .caja2 form button{
+        position: relative;
+        top: 25px;
+    }
+
+    .footer{
+        width: 100%;
+        height: 100vh;
+    }
+    .footer .boxFooter{
+        width: 100%;
+    }
+    .footer .caja-footer{
+        width: 100%;
+        flex-direction: column;
+    }
+    .footer .caja-footer .desactive{
+        display: none;
+    }
+}
+
+
